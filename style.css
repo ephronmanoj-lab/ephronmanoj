@@ -1,0 +1,716 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    
+}
+/*scrool*/
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #575a5e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: none; /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .top-btn:hover {
+    background-color: #0a0a0a;
+  }
+  
+  .top-btn.show {
+    display: block; /* Show button when scrolling down */
+  }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;    /* Keeps the navbar fixed */
+    top: 0;             /* Align it to the top of the page */
+    width: 100%;        /* Ensure it takes the full width */
+    z-index: 1000;      /* Ensure it's on top of other elements */
+  }
+
+   /*education */
+   .education-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.education-box {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.education-box h2 {
+    text-align: center;
+    color: #333;
+}
+
+.education-box p {
+    color: #555;
+    font-size: 16px;
+}
+
+.education-box p strong {
+    color: #333;
+}
+#education{
+    background-image: url(sec-3-bg.jpg);
+}
+
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(247, 245, 245);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh;
+    background-color: #413f3f;
+    color: hwb(20 98% 1% / 0.993);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('blacksnow.jpeg');
+   
+}
+.heading{ 
+    font-size: 180px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.heading2{
+    font-size: 90px;
+    font-family:cursive,fantasy;
+    text-align: right;
+}
+
+#hero .parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('ephron\ edited\ pic.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transform: translateZ(0) scale(1.5);
+}
+
+#hero .content {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    animation: fadeIn 2s ease-out;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* About Section */
+#about,#headin, #projects, #contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about h2,#headin, #projects h2, #contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+#skill{
+  padding: 4rem 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.project {
+    margin-top: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Parallax scrolling effect */
+#hero .parallax {
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+/* UI Motion Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.footer_section {
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    background-color: #101010;
+  }
+  
+  .footer_section p {
+    color: rgba(254, 254, 255, 0.7);
+    margin: 0;
+    text-align: center;
+  }
+  
+  .footer_section a {
+    color: rgba(254, 254, 255, 0.7);
+  }
+
+  .info_section {
+    background-color: #101010;
+    color: #ffffff;
+    padding: 75px 0 10px 0;
+  }
+  
+  .info_section .row > div {
+    margin-bottom: 25px;
+  }
+  
+  .info_section h5 {
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  
+  .info_section .info_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  
+  .info_section .info_logo .navbar-brand {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .info_section .info_logo .navbar-brand span {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .info_section .info_links ul {
+    padding: 0;
+  }
+  
+  .info_section .info_links ul li {
+    list-style-type: none;
+  }
+  
+  .info_section .info_links ul li a {
+    color: #ffffff;
+  }
+  
+  .info_section .info_contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .info_section .info_contact a {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .info_section .info_contact a i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .info_section .info_form form input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 30px;
+  }
+
+  .info_info {
+    
+    color: antiquewhite;
+    text-decoration: none;
+  }
+  
+  
+  /* Footer Style */
+/* Footer Style */
+footer {
+  background-color: #2e2f30;
+  color: white;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 20px;
+  
+}
+
+.contact-info h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1em;
+  margin: 5px 0;
+  color: azure;
+  text-decoration: none;
+}
+
+.social-media {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8em; /* Adjust size of icons */
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #3498db; /* Change color on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-media {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+.container-fluid{
+  text-decoration: none;
+}
+/*projrct*/
+
+/*skills*/
+/* Tech Skills section */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skill {
+  flex: 1 1 250px;
+  background-color: #e9e9e9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(10, 10, 10);
+}
+
+.skill ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill li {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #3a3636;
+}
+
+/*dwnlod button */
+.profile {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.download-resume {
+  margin-top: 40px;
+}
+
+.download-btn {
+  background-color: #2f3438;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.contact-btn{
+  background-color: #2f3438;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover ,.contact-btn:hover {
+  background-color: #0d0d0e;
+}
+
+.download-btn:active {
+  transform: scale(0.98);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.text-section {
+    text-align: left;
+    max-width: 500px;
+}
+/*mobile*/
+/* Responsive Design for different devices */
+@media only screen and (max-width: 1024px) {
+  /* Tablet Portrait & Smaller */
+  #hero .content h1 {
+      font-size: 5vw;
+  }
+
+  #hero .content h2 {
+      font-size: 3.5vw;
+  }
+
+  /* Stack Education boxes on smaller screens */
+  .education-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .education-box {
+      width: 80%;
+      margin: 15px 0;
+  }
+
+  /* Stack Skills boxes */
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill {
+      width: 80%;
+  }
+
+  /* Adjust footer icons */
+  .social-icon {
+      font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Tablet and smaller (Portrait mode) */
+  nav ul {
+      flex-direction: column;
+      padding: 10px 0;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  #hero .content h1 {
+      font-size: 6vw;
+  }
+
+  #hero .content h2 {
+      font-size: 4vw;
+  }
+
+  .education-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .education-box {
+      width: 90%;
+  }
+
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  .download-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+  }
+
+  /* Reduce size of footer icons */
+  .social-icon {
+      font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Mobile Phones in Portrait Mode */
+  #hero .content h1 {
+      font-size: 8vw;
+  }
+
+  #hero .content h2 {
+      font-size: 6vw;
+  }
+
+  .about p,
+  .education-box p,
+  .skill ul li {
+      font-size: 1rem;
+  }
+
+  .education-box,
+  .skill {
+      width: 100%;
+      margin-bottom: 15px;
+  }
+
+  .download-btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+
+  .profile img {
+      width: 120px;
+  }
+
+  .social-icon {
+      font-size: 1.2rem;
+  }
+
+  footer p {
+      font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /* Mobile Phones in Landscape Mode or Small Screens */
+  #hero .content h1 {
+      font-size: 10vw;
+  }
+
+  #hero .content h2 {
+      font-size: 7vw;
+  }
+
+  .education-box,
+  .skill {
+      width: 100%;
+  }
+
+  .download-btn {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+  }
+
+  .social-icon {
+      font-size: 1.1rem;
+  }
+
+  footer p {
+      font-size: 0.8rem;
+  }
+}
+
+/* For tablets (Portrait Mode & Small Tablets) */
+@media only screen and (max-width: 1024px) {
+  #contact h2 {
+      font-size: 2rem; /* Slightly smaller heading */
+  }
+
+  #contact p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+  }
+
+  .profile-image {
+      width: 180px;
+      height: 180px; /* Adjust profile image size for tablets */
+  }
+
+  .download-btn {
+      font-size: 1rem;
+      padding: 12px 25px; /* Adjust button size */
+  }
+}
+
+/* For phones in portrait orientation */
+@media only screen and (max-width: 768px) {
+  #contact {
+      padding: 5% 5%;
+  }
+
+  #contact h2 {
+      font-size: 1.8rem;
+  }
+
+  #contact p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+  }
+
+  .profile-image {
+      width: 100px;
+      height: 100px; /* Smaller image for mobile */
+    
+  }
+
+  .download-btn {
+      font-size: 1rem;
+      padding: 12px 25px;
+  }
+}
+
+/* For very small screens (mobile in landscape and smaller devices) */
+@media only screen and (max-width: 480px) {
+  #contact h2 {
+      font-size: 1.5rem; /* Even smaller heading */
+  }
+
+  #contact p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 15px;
+  }
+
+  .profile-image {
+      width: 120px;
+      height: 120px; /* Further reduce profile image size for very small screens */
+  }
+
+  .download-btn {
+      font-size: 0.9rem;
+      padding: 10px 20px; /* Reduce button size for smaller screens */
+  }
+}
+
+/* For ultra-small screens (very small phones or very low resolutions) */
+@media only screen and (max-width: 320px) {
+  #contact h2 {
+      font-size: 1.4rem; /* Even smaller font size */
+  }
+
+  #contact p {
+      font-size: 0.9rem;
+      line-height: 1.3;
+      margin-bottom: 15px;
+  }
+
+  .profile-image {
+      width: 100px;
+      height: 100px; /* Further reduce profile image size */
+  }
+
+  .download-btn {
+      font-size: 0.9rem;
+      padding: 10px 15px; /* Adjust button for very small screens */
+  }
+}
+

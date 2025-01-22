@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.7/plugins/animation.gsap.js"></script>
+</head>
+<body>
+    <button class="top-btn" onclick="scrollToTop()">&#8593;</button>
+<header>
+    <!-- Navigation -->
+    <nav>
+         <!-- Hamburger Icon -->
+         
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#headin">Education</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+</header>
+    <!-- Hero Section with Parallax Effect -->
+    <section id="hero">
+        <div class="parallax"></div>
+        
+        <div class="content"><br><br><br>
+            <h1 class="heading">EPHRON,</h1>
+            <h2 class="heading2">Manoj</h2><br><br><br><br><br><br><br><br><br><br><br><br>
+          <!--- <div class="button-container">
+                <a href="home.html" class="center-button">KNOW MORE ABOUT ME....</a>
+            </div>   -->
+    </section>
+    <!-- carousel -->
+
+    <!-- About Section -->
+    <section id="about">
+        
+        <h2>About Me</h2>
+        <p>Highly motivated and eager-to-learn computer science graduate with a strong foundation in various programming languages and technologies. Possess proficiency in HTML, CSS, JavaScript, PHP, Bootstraps, and  SQL, along with cloud skills in AWS. Driven to contribute to a dynamic team and apply my theoretical knowledge to real-world projects.</p>
+       
+    </section>
+<!--testing -->
+
+<h2 id="headin">Education</h2>
+<section id="education" class="education-container">
+    <div class="education-box">
+        <h2>School Education</h2><br>
+        <p><strong>Institution:</strong> Yuvalok High School</p>
+        <p><strong>Year of Graduation:</strong> 2018</p>
+        <p><strong>Percentage:</strong> 82%</p>
+        
+    </div>
+
+    <div class="education-box">
+        <h2>Pre-University Education</h2><br>
+        <p><strong>Institution:</strong> Christel House of India</p>
+        <p><strong>Course:</strong>PCMC</p>
+        <p><strong>Year of Graduation:</strong> 2020</p>
+        <p><strong>Percentage:</strong> 78%</p>
+
+        
+    </div>
+
+    <div class="education-box">
+        <h2>Undergraduate Education</h2><br>
+        <p><strong>Institution:</strong>  Kristu Jayanti College</p>
+        <p><strong>Degree:</strong> Bachelor of Science in Computer Science</p>
+      
+        <p><strong>Year of Graduation:</strong> 2023</p>
+        <p><strong>CGPA:</strong> 7.5</p>
+
+        
+    </div>
+</section>
+
+<!--skills-->
+<section id="skill">
+  <h2>My Tech Skills</h2>
+</section>
+
+<section id="tech-skills">
+  
+  <div class="skills-container">
+    <div class="skill">
+      <h3>Frontend Development</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstraps</li>
+        
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Backend Development</h3>
+      <ul>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>PHP</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Databases</h3>
+      <ul>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+        <li>Apache web server</li>
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Version Control</h3>
+      <ul>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>GitLab</li>
+        <li></li>
+
+      </ul>
+    </div>
+    <div class="skill">
+      <h3>Other Technologies</h3>
+      <ul>
+        <li>ChatGpt</li>
+        <li>Wordpress</li>
+     </ul>
+    </div>
+    <div class="skill">
+      <h3>Multimedia Tools</h3>
+      <ul>
+        <li>Photoshop</li>
+        <li>Soundforge</li>
+        <li>MsExcel</li>
+        <li></li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+<br>
+    <!-- Projects Section -->
+    
+     
+     <!---- <section id="projects">  <h2>My Projects</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <p>Project 1 description.</p>
+        </div>
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <p>Project 2 description.</p>
+        </div> -->
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me...</p><br>
+        <div class="profile">
+          <img src="ephron edited pic.jpeg" alt="My Photo" class="profile-image">
+          
+      </div>
+      <section class="download-resume">
+        
+        <a href="Ephron_Resume.pdf" download="Ephron.pdf">
+          <button id="download-btn" class="download-btn">Download My Resume</button>
+      </a>
+    </section>
+
+    
+  </div>
+    <script>
+      // JavaScript for download button
+      document.getElementById('download-btn').addEventListener('click', function() {
+          const link = document.createElement('a');
+          link.href = 'C:\Users\Danial\Desktop\ephronResume\Ephron_Resume.pdf';  // Path to your resume file
+          link.download = 'Ephron Resume.pdf';  // Name of the downloaded file
+          link.click();
+      });
+
+      
+
+  </script>
+  
+        <button class="top-btn" onclick="scrollToTop()">&#8593;</button>
+    </section>
+
+    
+   
+              
+
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <h3>Contact Me</h3>
+        <p><strong><i class="fas fa-envelope"></i> Email:</strong> ephronmanoj4@gmail.com</p>
+        <p><strong><i class="fas fa-phone"></i> Phone:</strong> +91 8050733693</p>
+        <p><strong></strong> </p>
+      </div>
+      <div class="social-media">
+        <a href="https://www.instagram.com/i_am_ephron/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+<a href="mailto:ephronmanoj4@gmail.com" class="social-icon"> <i class="fas fa-envelope"></i></a>
+<a href="tel:+91 8050733693" class="social-icon"> <i class="fas fa-phone"></i></a>
+
+        <a href="https://github.com/ephronmanoj-lab" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://in.linkedin.com/in/ephron-manoj-t-s-505099208" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+    <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span>2025 All Rights Reserved. Designed by Ephron Manoj</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
